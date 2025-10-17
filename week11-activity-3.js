@@ -1,45 +1,50 @@
-//ARRAY
-/*We are setting up our small library of books 
-about JavaScript programming. 
-We have three books and want to prepare a list of them. 
-We will store three pieces information about each book: 
-title, author, and number of pages:
+// Create an array of three objects representing the books
+let books = [
+    {
+        title: "About Something",
+        author: "Justin Escarilla",
+        pages: 460
+    },
+    {
+        title: "About Applications",
+        author: "Eric Elliott",
+        pages: 254
+    },
+    {
+        title: "About Understanding",
+        author: "Nicholas Velasquez",
+        pages: 352
+    }
+];
 
-Speaking JavaScript, Axel Rauschmayer, 460;
-Programming JavaScript Applications, Eric Elliott, 254;
-Understanding ECMAScript 6, Nicholas C. Zakas, 352.
+console.log("Book Collection:");
+console.log(books);
 
-Create an array of three objects representing the books. 
-Each object must have the following properties: title, author, pages.*/
+// Add a new book to the collection
+books.push({
+    title: "Chasing Love",
+    author: "KAT T. MASEN",
+    pages: 254
+});
 
+console.log("\nAfter adding a new book:");
+console.log("Length of the array:", books.length);
+console.log("Book names:");
+books.forEach(book => console.log(book.title));
 
+// Use the slice command to copy the last two books to the new array
+let lastTwoBooks = books.slice(-2);
+console.log("\nLast two books copied to a new array:");
+console.log(lastTwoBooks);
 
+// Remove the first book from the array
+books.shift();
 
+console.log("\nAfter removing the first book:");
+console.log("Length of the array:", books.length);
+console.log("Book names:");
+books.forEach(book => console.log(book.title));
 
-/* Add a new book to the collection: 
-Learning JavaScript Design Patterns, by Addy Osmani, 254 pages. 
-Use the appropriate method to do this, 
-which will attach the book at the end of the array. 
-Display the length of the array and, in turn, all the book names in the collection.*/
-
-
-
-
-
-
-//Use the slice command to copy the last two books to the new array.
-
-
-
-
-/*The first book from the collection is lost in unexplained circumstances. 
-You have already accepted the loss, so remove it from the array. 
-Which method will you use for this purpose? 
-Display the length of the array and all the names of the books from the collection in turn.*/
-
-
-
-
-
-//Display the sum of the pages of all the books from the collection.
-
+// Display the sum of the pages of all the books from the collection
+let totalPages = books.reduce((sum, book) => sum + book.pages, 0);
+console.log("\nSum of the pages of all books:", totalPages);
