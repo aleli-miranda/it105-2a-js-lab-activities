@@ -11,7 +11,7 @@ The object must be created using curly brackets,
 in which all created fields will be listed immediately. 
 Then display the values of all fields of the ticket on the console.
 */
-
+//start code here
 
 
 /*Question 2: 
