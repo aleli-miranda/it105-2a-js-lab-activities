@@ -16,7 +16,7 @@ let contacts = [{
 contacts.push({
     name: "Gabriel Velasquez",
     phone: "0913 531 3030",
-    email: "What.if@gmail.com"
+    email: "gabriel.velasquez@olivarezcollegetagaytay.edu.ph"
 });
 
 // 2. Update Helen Richards' phone number

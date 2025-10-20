@@ -3,17 +3,17 @@ let books = [
     {
         title: "About Something",
         author: "Justin Escarilla",
-        pages: 460
+        pages: 420
     },
     {
         title: "About Applications",
         author: "Eric Elliott",
-        pages: 254
+        pages: 67
     },
     {
         title: "About Understanding",
         author: "Nicholas Velasquez",
-        pages: 352
+        pages: 69
     }
 ];
 
@@ -22,9 +22,9 @@ console.log(books);
 
 // Add a new book to the collection
 books.push({
-    title: "Chasing Love",
-    author: "KAT T. MASEN",
-    pages: 254
+    title: "About Website",
+    author: "Erika Velasquez",
+    pages: 14
 });
 
 console.log("\nAfter adding a new book:");
