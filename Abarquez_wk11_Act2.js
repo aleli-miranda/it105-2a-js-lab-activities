@@ -1,3 +1,4 @@
+
 //Objects
 /*
 Question 1: Create an object that describes a train ticket and 
@@ -11,17 +12,17 @@ The object must be created using curly brackets,
 in which all created fields will be listed immediately. 
 Then display the values of all fields of the ticket on the console.
 */
-//start code here
 
-// Question 1
+
+console.log("----------Question 1---------");
 let ticket = {
-  from: "Penn Station",
-  to: "Philadelphia 30th Street",
-  price: 50
+    start: "Amuyong Bus Stop",  
+    end: "Imus Transport Terminal",        
+    price: 300          
 };
-console.log(ticket.from);
-console.log(ticket.to);
-console.log(ticket.price);
+console.log("Start of Stop:", ticket.start);
+console.log("End of stop:", ticket.end);
+console.log("The ticket price from Amuyong Bus Stop to Imus Transport Terminal is:", ticket.price);
 
 /*Question 2: 
 Declare an empty object and save it to a person variable. 
@@ -29,10 +30,12 @@ Using dot notation, add the name and surname fields to the
 object by entering your data as values. 
 Try to display the individual fields on the console. */
 
-// Question 2
-let person = {};
-person.name = "Princes";
-person.surname = "Villanueva";
-console.log(person.name);
-console.log(person.surname);
 
+console.log("----------Question 2---------");
+let person = {}; 
+
+person.name = "Rheiven Irah P.";      
+person.surname = "Abarquez";  
+
+console.log("Name:", person.name);
+console.log("Surname:", person.surname);
