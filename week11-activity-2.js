@@ -5,7 +5,7 @@ let ticket = {
     price: 30.00 
 };
 
-console.log("Train Ticket Details:");
+console.log("Bus Ticket Details:");
 console.log(`From: ${ticket.from}`);
 console.log(`To: ${ticket.to}`);
 console.log(`Price: ${ticket.price.toFixed(2)}`); 
