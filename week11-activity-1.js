@@ -5,34 +5,24 @@ let contacts = [
   { name: "Helen Richards", phone: "0800 1111", email: "libero@convallis.edu" }
 ];
 
-// 1. Add a new contact using the push() method
-contacts.push({ name: "Maisie Haley", phone: "0913 531 3030", email: "risus.Quisque@urna.ca" });
+// 1. Add a new contact
+contacts.push({ name: "luka doncic", phone: "0913 531 3030", email: "lukadoncic@urna.ca" });
 
-// 2. Update the phone number for Helen Richards
-// Loop through the array to find and update the contact
-for (let i = 0; i < contacts.length; i++) {
-  if (contacts[i].name === "Helen Richards") {
-    contacts[i].phone = "0800 2222";  // Update the phone number
-  }
-}
+// 2. Update Helen Richards' phone number
+const helen = contacts.find(c => c.name === "Helen Richards");
+if (helen) helen.phone = "0800 2222";
 
-// 3. Delete the contact for Raja Villarreal
-// Use filter() to create a new array without the specified contact
-contacts = contacts.filter(contact => contact.name !== "Raja Villarreal");
+// 3. Delete Raja Villarreal
+contacts = contacts.filter(c => c.name !== "Raja Villarreal");
 
-// 4. Display the first and last contact in the format: name / phone / email
-if (contacts.length > 0) {
-  // First contact (index 0)
-  const firstContact = contacts[0];
-  console.log(`${firstContact.name} / ${firstContact.phone} / ${firstContact.email}`);
-  
-  // Last contact (use length property to get the index)
-  const lastIndex = contacts.length - 1;  // Remember, arrays are 0-based
-  const lastContact = contacts[lastIndex];
-  console.log(`${lastContact.name} / ${lastContact.phone} / ${lastContact.email}`);
+// 4. Display first and last contact
+if (contacts.length) {
+  [contacts[0], contacts[contacts.length - 1]].forEach(c =>
+    console.log(`${c.name} / ${c.phone} / ${c.email}`)
+  );
 } else {
   console.log("The contacts array is empty!");
 }
 
-// Final array for reference (optional debug output)
+// Final array (debug)
 console.log(contacts);
