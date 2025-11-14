@@ -31,8 +31,9 @@ Try to display the individual fields on the console. */
 
 // Question 2
 let person = {};
-person.name = "Princes";
-person.surname = "Villanueva";
+person.name = "Mark";
+person.surname = "Gimena";
+
 console.log(person.name);
 console.log(person.surname);
 
