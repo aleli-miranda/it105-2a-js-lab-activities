@@ -15,13 +15,15 @@ Then display the values of all fields of the ticket on the console.
 
 // Question 1
 let ticket = {
-  from: "Penn Station",
-  to: "Philadelphia 30th Street",
-  price: 50
+    from: "Quezon City",
+    to: "Dasmariñas", 
+    price: 78.00 
 };
-console.log(ticket.from);
-console.log(ticket.to);
-console.log(ticket.price);
+
+console.log("Bus Ticket Details:");
+console.log(`From: ${ticket.from}`);
+console.log(`To: ${ticket.to}`);
+console.log(`Price: ${ticket.price.toFixed(2)}`); 
 
 /*Question 2: 
 Declare an empty object and save it to a person variable. 
@@ -31,8 +33,11 @@ Try to display the individual fields on the console. */
 
 // Question 2
 let person = {};
-person.name = "Princes";
-person.surname = "Villanueva";
-console.log(person.name);
-console.log(person.surname);
+
+person.name = "Yvan";
+person.surname = "Ermino";
+
+console.log("\nPersonal Details:");
+console.log(`Name: ${person.name}`);
+console.log(`Surname: ${person.surname}`)
 
