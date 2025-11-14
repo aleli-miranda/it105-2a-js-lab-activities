@@ -1,31 +1,47 @@
-//ARRAY
-/*We are setting up our small library of books 
-about JavaScript programming. 
-We have three books and want to prepare a list of them. 
-We will store three pieces information about each book: 
-title, author, and number of pages:
 
-Speaking JavaScript, Axel Rauschmayer, 460;
-Programming JavaScript Applications, Eric Elliott, 254;
-Understanding ECMAScript 6, Nicholas C. Zakas, 352.
+let books = [
+    {
+        title: "About Something",
+        author: "Fredrick Constante",
+        pages: 420
+    },
+    {
+        title: "About Applications",
+        author: "Warren Zerrudo",
+        pages: 67
+    },
+    {
+        title: "About Understanding",
+        author: "Gabrielle Velasquez",
+        pages: 69
+    }
+];
 
-Create an array of three objects representing the books. 
-Each object must have the following properties: title, author, pages.*/
+console.log("Book Collection:");
+console.log(books);
 
-/* Add a new book to the collection: 
-Learning JavaScript Design Patterns, by Addy Osmani, 254 pages. 
-Use the appropriate method to do this, 
-which will attach the book at the end of the array. 
-Display the length of the array and, in turn, all the book names in the collection.*/
+books.push({
+    title: "About Website",
+    author: "Shanaia grace",
+    pages: 14
+});
 
-
-//Use the slice command to copy the last two books to the new array.
-
-
-/*The first book from the collection is lost in unexplained circumstances. 
-You have already accepted the loss, so remove it from the array. 
-Which method will you use for this purpose? 
-Display the length of the array and all the names of the books from the collection in turn.*/
+console.log("\nAfter adding a new book:");
+console.log("Length of the array:", books.length);
+console.log("Book names:");
+books.forEach(book => console.log(book.title));
 
 
-//Display the sum of the pages of all the books from the collection.
+let lastTwoBooks = books.slice(-2);
+console.log("\nLast two books copied to a new array:");
+console.log(lastTwoBooks);
+
+books.shift();
+
+console.log("\nAfter removing the first book:");
+console.log("Length of the array:", books.length);
+console.log("Book names:");
+books.forEach(book => console.log(book.title));
+
+let totalPages = books.reduce((sum, book) => sum + book.pages, 0);
+console.log("\nSum of the pages of all books:", totalPages);
