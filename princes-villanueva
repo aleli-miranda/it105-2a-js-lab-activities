@@ -6,16 +6,11 @@ let contacts = [
 ];
 
 // 1. Add a new contact using the push() method
-contacts.push({ name: "Maisie Haley", phone: "0913 531 3030", email: "risus.Quisque@urna.ca" });
+
 
 // 2. Update the phone number for Helen Richards
 // Loop through the array to find and update the contact
-for (let i = 0; i < contacts.length; i++) {
-  if (contacts[i].name === "Helen Richards") {
-    contacts[i].phone = "0800 2222";
-    break; // Exit loop once found and updated
-  }
-} 
+
 
 // 3. Delete the contact for Raja Villarreal
 // Use filter() to create a new array without the specified contact
