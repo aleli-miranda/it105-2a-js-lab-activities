@@ -19,12 +19,15 @@ for (let i = 0; i < contacts.length; i++) {
 
 // 3. Delete the contact for Raja Villarreal
 // Use filter() to create a new array without the specified contact
-
+let updatedContacts = contacts.filter(contact => contact.name !== "Raja Villarreal");
 
 // 4. Display the first and last contact in the format: name / phone / email
 
   // First contact (index 0)
-  
+  console.log(`${updatedContacts[0].name} / ${updatedContacts[0].phone} / ${updatedContacts[0].email}`);
   // Last contact (use length property to get the index)
-  
+  console.log(`${updatedContacts[updatedContacts.length - 1].name} / ${updatedContacts[updatedContacts.length - 1].phone} / ${updatedContacts[updatedContacts.length - 1].email}`);
+// Final array for reference (optional debug output)
+console.log(updatedContacts);
+
 // Final array for reference (optional debug output)
