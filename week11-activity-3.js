@@ -11,21 +11,31 @@ Understanding ECMAScript 6, Nicholas C. Zakas, 352.
 
 Create an array of three objects representing the books. 
 Each object must have the following properties: title, author, pages.*/
-
+let books = [
+  { title: "Speaking JavaScript", author: "Axel Rauschmayer", pages: 460 },
+  { title: "Programming JavaScript Applications", author: "Eric Elliott", pages: 254 },
+  { title: "Understanding ECMAScript 6", author: "Nicholas C. Zakas", pages: 352 }
+];
 /* Add a new book to the collection: 
 Learning JavaScript Design Patterns, by Addy Osmani, 254 pages. 
 Use the appropriate method to do this, 
 which will attach the book at the end of the array. 
+books.push({ title: "Learning JavaScript Design Patterns", author: "Addy Osmani", pages: 254 });
 Display the length of the array and, in turn, all the book names in the collection.*/
-
+console.log("Length of the array:", books.length);
 
 //Use the slice command to copy the last two books to the new array.
-
+let lastTwoBooks = books.slice(-2);
+console.log("Last two books:", lastTwoBooks);
 
 /*The first book from the collection is lost in unexplained circumstances. 
 You have already accepted the loss, so remove it from the array. 
 Which method will you use for this purpose? 
+books.shift();
 Display the length of the array and all the names of the books from the collection in turn.*/
-
+console.log("Book names after removal:");
+books.forEach(book => console.log(book.title));
 
 //Display the sum of the pages of all the books from the collection.
+let totalPages = books.reduce((sum, book) => sum + book.pages, 0);
+console.log("Sum of pages:", totalPages);
