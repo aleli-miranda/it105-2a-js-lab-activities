@@ -1,24 +1,57 @@
-// Original contacts array
-let contacts = [
-  { name: "Maxwell Wright", phone: "(0191) 719 6495", email: "Curabitur.egestas.nunc@nonummyac.co.uk" },
-  { name: "Raja Villarreal", phone: "0866 398 2895", email: "posuere.vulputate@sed.com" },
-  { name: "Helen Richards", phone: "0800 1111", email: "libero@convallis.edu" }
-];
+let contacts = [{
+    name: "Maxwell Wright",
+    phone: "(0191) 719 6495",
+    email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+    }, {
+    name: "Raja Villarreal",
+    phone: "0866 398 2895",
+    email: "posuere.vulputate@sed.com"
+    }, {
+    name: "Helen Richards",
+    phone: "0800 1111",
+    email: "libero@convallis.edu"
+    }];
+    
+    
+    //INSTRUCTIONS
+    /*
+    1.  ADD a new contact using the appropriate array method. 
+    The new contact is: Maisie Haley / 0913 531 3030 / risus.Quisque@urna.ca.
+    */
+    contacts.push({
+      name: "Ericson Tugbo",
+      phone: "09972217836",
+      email: "ericson.tugbo@olivarezcollegetagaytay.edu.ph"
+    });
+    
+    
+    /*
+    2. UPDATE the phone number for Helen Richards to: 0800 2222.
+    */
+    contacts[2].phone = "0800 2222";
+    
+    
+    /*
+    3.  DELETE the contact for Raja Villarreal from the array.
+    */
+    contacts.splice(1, 1);
+    
+    
+    /*
+    4.  Display the first and last contact, 
+    again in the format: name / phone / email. 
+    Use the length property of the array to determine the index of the last element. 
+    Remember that the array elements are indexed starting at 0
+    */
+    console.log(contacts[0].name + " / " + 
+      contacts[0].phone + " / " + 
+      contacts[0].email
+    );
+    
+    console.log(
+      contacts[contacts.length - 1].name + " / " +
+      contacts[contacts.length - 1].phone + " / " +
+      contacts[contacts.length - 1].email
+    );
 
-// 1. Add a new contact using the push() method
 
-
-// 2. Update the phone number for Helen Richards
-// Loop through the array to find and update the contact
-
-// 3. Delete the contact for Raja Villarreal
-// Use filter() to create a new array without the specified contact
-
-
-// 4. Display the first and last contact in the format: name / phone / email
-
-  // First contact (index 0)
-  
-  // Last contact (use length property to get the index)
-  
-// Final array for reference (optional debug output)
